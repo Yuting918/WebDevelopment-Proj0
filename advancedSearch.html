@@ -8,11 +8,11 @@
     <body>
         <div id="links">
             <a href="imageSearch.html"><button>Image Search</button></a>
-            <a href="index.html"><button>Googlr Search</button></a>
+            <a href="index.html"><button>Google Search</button></a>
         </div>
 
-        <div id="form">
-            <form action="https://www.google.com/advanced_search">
+        <div>
+            <form action="https://www.google.com/search" style="text-align: left; ">
                 <table>
                     <tr>
                         <td>All those words</td>
@@ -20,9 +20,19 @@
                     </tr>
                     <tr>
                         <td>Exact match</td>
-                        <td></td>
+                        <td><input type="text" name="as_epq"></td>
+                    </tr>
+                    <tr>
+                        <td>Any of these words</td>
+                        <td><input type="text" name="as_oq"></td>
+                    </tr>
+                    <tr>
+                        <td>None of these words</td>
+                        <td><input type="text" name="as_eq"></td>
                     </tr>
                 </table>
+                <input type="submit" value="Advanced Search" id="main_search_button" 
+                style="background-color: rgb(72, 138, 214);color:white;width: 50p;height: 30px;font-size: 10px;">
                 
             </form>
 
